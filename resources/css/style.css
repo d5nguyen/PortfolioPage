@@ -1,3 +1,5 @@
+/* color experiments: #6500c9 */
+
 *{
     margin: 0;
     padding: 0;
@@ -24,20 +26,25 @@ html, body {
 }
 
 h1 { 
-    color: #6500c9;
+    color: #fff;
     margin: 0;
     font-size: 805%;
     display:block;
 }
 .first-h1 {
     font-weight: 300;
+    font-size: 750%;
+    line-height: .4;
 }
 .second-h1 {
     font-weight: 900;
+    left: -10px;
 }
-
-.welcome-text {
-    margin: 70px 30px 30px 110px;
+.intro-subtext {
+    color: #fff;
+}
+.intro-section {
+    margin: 190px 30px auto 110px;
 }
 
 .welcome-subtext {
@@ -47,7 +54,12 @@ h1 {
 #front-link {
     text-decoration: none;
     font-size: 100%;
-    color: aqua;
+    color: #fff;
+}
+
+#front-link:hover,
+#front-link:active { 
+    color: #bf62bf;
 }
 
 
@@ -55,16 +67,12 @@ header {
 
     height: 100vh;
     background-attachment: fixed;
-/*
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-*/
-/*
     background-repeat: no-repeat;
-    background-image: url();
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
-*/
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)), url(../img/pinkPurpleMtns.jpg);
+/*    */
 }
 
 
@@ -95,7 +103,7 @@ header {
 .main-nav li a:visited {
     text-decoration: none;
     border: 0;
-    color: #bf62bf;
+    color: #fff;
     transition: color 0.2s;
 }
 
@@ -116,13 +124,11 @@ section {
 }
 
 
-/*
 .project-pic {
     height: 200px;
     width: auto;
     display: block;
 }
-*/
 
 #Project {
     
@@ -133,7 +139,7 @@ h2 {
     display: block;
 }
 
-.project-link {
+.project-tile {
     display: inline-lock;
 }
 
@@ -147,6 +153,7 @@ h2 {
 
 a {
     text-decoration: none;
+
 }
     
     
