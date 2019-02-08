@@ -14,11 +14,11 @@
                 <nav id="navbar">
                     <div class="row">
                     <ul class="main-nav">
-                        <li><a href=#Projects>Projects</a></li>
-                        <li><a href=#Blog>Blog</a></li> 
-                        <li><a href=#About>About</a></li> 
-                        <li><a href=#Resume>Resume</a></li>
-                        <li><a href=#Contact>Contact</a></li> 
+                        <li><a class="js--scroll-to-projects" href=#Projects>Projects</a></li>
+                        <li><a class="js--scroll-to-blog" href=#Blog>Blog</a></li> 
+                        <li><a class="js--scroll-to-about" href=#About>About</a></li> 
+                        <li><a class="js--scroll-to-resume" href=#Resume>Resume</a></li>
+                        <li><a class="js--scroll-to-contact" href=#Contact>Contact</a></li> 
                     </ul>
                 </nav>
                 <div class="intro-section">    
@@ -26,52 +26,93 @@
                     <h1 class="second-h1">Diane Nguyen.</h1>
                 </div>
                 <div class="welcome-subtext">    
-                    <p class="intro-subtext">So glad you're here.</p>
+                    <p class="intro-subtext">I'm so glad you're here!</p>
                     <p class="intro-subtext">Welcome to <a id="front-link" href="#Projects">my portfolio site.</a></p>   
                 </div>    
             </header>
 <!---Projects---->            
-            <section id="Projects"> 
+            <section id="Projects" class="js-projects"> 
                 <div class="row">
                     <h2>Projects</h2>
-                    <div class="grid-box">
-                        <a class="project-tile" href="https://d5nguyen.github.io/whatsfordinah/" target="_blank">
-<!--                            What's for Dinah - travel and food blog-->
-                        <img class="project-pic" src="resources/img/BuffaloScouting.jpg">
+                    <ul class="grid-box">
+                         <!--Omnifood food delivery company -->
+                         <li>
+                            <a class="project-tile" href="https://d5nguyen.github.io/Omnifood/" target="_blank">
+                                <figure class="grid-photo"> 
+                                    <img class="project-pic" src="resources/img/ProjectScreenShots/omnifoodScreenShot.png">
+                                </figure>
+                            </a>
+                        </li>
+                        
+                        <!-- What's for Dinah - travel and food blog -->
+                        <li>    
+                            <a class="project-tile" href="https://d5nguyen.github.io/whatsfordinah/" target="_blank">
+                                <figure class="grid-photo"> 
+                                    <img class="project-pic" src="resources/img/ProjectScreenShots/BuffaloScoutScreenShot.png">
+                                </figure>
+                            </a>
+                        </li>
+                        <!-- Technical Documentation Page -->
+                        <li>
+                            <a class="project-tile" href="https://d5nguyen.github.io/TechDoc/" target="_blank">
+                                <figure class="grid-photo">
+                                    <img class="project-pic" src="resources/img/ProjectScreenShots/TechDocScreenShot.png">
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="grid-box clearfix">   
+                         <!-- Submit form -->
+                        <li>
+                         <a class="project-tile" href="#" target="_blank"> 
+                            <figure class="grid-photo">
+                                <img class="project-pic" src="resources/img/ProjectScreenShots/submitFormScreenShot.png">
+                            </figure>
                         </a>
-                        <a class="project-tile" href="https://d5nguyen.github.io/Omnifood/" target="_blank">
-<!--                            Omnifood food delivery company -->
-                        <img class="project-pic" src="">
+                        </li>
+                        <!-- Prince Fan Page  -->
+                        <li>
+                        <a class="project-tile" href="#" target="_blank">
+                            <figure class="grid-photo">
+                                <img class="project-pic" src="resources/img/ProjectScreenShots/PrinceScreenShot.png">
+                            </figure>
                         </a>
-                    </div>
-                    
+                        </li>
+                    </ul>    
                 </div>
+                <p><a id="profile-link" href="https://github.com/d5nguyen" target="_blank">GitHub Page<ion-icon name="logo-github"></ion-icon></a></p>
             </section>    
 <!---Blog--->
-            <section id="Blog"> 
+            <section id="Blog" class="js-blog"> 
                 <div class="row">
-                    <h2>Blog</h2> 
+                    <h2>Blog</h2>
+                        <p> --- Coming Soon! --- </p>
                 </div>
             </section>
                 
 <!---Resume--->
-            <section id="Resume"> 
+            <section id="Resume" class="js-resume"> 
                 <div class="row">
                     <h2>Resume</h2> 
+                        <p> --- Coming Soon! --- </p>
+                <p><a href="https://github.com/d5nguyen" target="_blank">GitHub Page<ion-icon name="logo-github"></ion-icon></a></p>
+                
                 </div>
             </section>
                 
 <!---About--->
-            <section id="About"> 
+            <section id="About" class="js-about"> 
                 <div class="row">
                     <h2>About</h2> 
+                    <p> --- Coming Soon! --- </p>
                 </div>
             </section>
                 
 <!---Contact--->                
-            <section id="Contact"> 
+            <section id="Contact" class="js-contact"> 
                 <div class="row">
-                    <h2>Contact</h2> 
+                    <h2>Contact</h2>
+                    <a href="mailto:d5nguyen@gmail.com" target="_blank">Contact Me</a>
                 </div>
             </section>  
                 
@@ -99,24 +140,25 @@
             <footer>
             <div>
                 <ul class="social-links">
-                    <li><a href="#"></a><i class="ion-ios-camera-outline"></i></li>
-                    <li><a href="#"></a><i class="ion-ios-personadd"></i></li>
-                    <li><a href="#"></a><i class="ion-social-twitter"></i></li>
+                    <li><a href="www.linkedin.com/in/d5nguyen"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="https://github.com/d5nguyen"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a href="https://twitter.com/di_winn"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://www.instagram.com/di_anne_winn/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a></li>
                 </ul>
             </div>
         <div class="row">
             <p>
-                whatsfordinah.com
+                https://d5nguyen.github.io/PortfolioPage/
             </p>
         </div>
              
             </footer>
             
-            <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+            <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+            <script src="resources/js/portfolio.js"></script>   
         </body>
 
         
-
 
 
 

@@ -1,4 +1,4 @@
-/* color experiments: #6500c9 */
+/* color experiments: #261A42; #6500c9; light purple: #e1d5e2; pink: # e183b5;*/
 
 *{
     margin: 0;
@@ -7,17 +7,18 @@
 }
 
 html {
-    background-color: #fff;
-    color:#6500c9;
+    background-color: #eee;
+    color:#261A42;
     font-family: 'Lato', sans-serif; 
     font-weight: 100, 300, 400, 900;
     font-size: 130%;
-    text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
 }
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
 }
 
 .row {
@@ -113,40 +114,105 @@ header {
 }
 
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto;    
+
+
+/* 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+    background-color: #6500c9;
 }
+
+.sticky .main-nav {margin-top:16px;}
+
+.sticky .main-nav li a:link, 
+.sticky .main-nav li a:visited {
+    padding: 15px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 100%;
+    color: #fff;
+} */
+
+
 
 section {
     margin: 50px;
     display: block;
 }
 
+.row {
+    max-width: 1140px;
+    margin: 0 auto;    
+}
+
 
 .project-pic {
     height: 200px;
     width: auto;
-    display: block;
 }
 
-#Project {
-    
-}
 h2 {
     color: #6500c9;
     margin-bottom: 50px;
     display: block;
 }
 
-.project-tile {
-    display: inline-lock;
+
+.grid-box {
+    width: 100%;
+    list-style: none;
+    display: block;
+
 }
 
+.grid-box li {
+    display: block;
+    float:left;
+    width: 30%;
+    margin-left: 15px;
+}
 
+.grid-photo {
+    width: 90%;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 10px;
+}
 
+.grid-box img { 
+    opacity: 1;   
+    width: 100%;
+    height: auto;
+    transition: opacity 1s;
+   
+}
 
+.grid-box img:hover {
+    opacity: 0.3;
+    
+    
+}
 
+#profile-link {
+    margin-left: 40px;
+
+}
+
+/* .clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+} */
 
 
 /* Buttons */
@@ -156,11 +222,11 @@ a {
 
 }
     
-    
-.btn:hover,
+
+/* .btn:hover,
 .btn:active {
     background-color: #d3a60f
-}
+} */
 
 
 
@@ -212,8 +278,8 @@ a {
 
 
 footer {
-    background-color: #fff;
-    padding: 20px;
+    background-color: #e1d5e2;
+    padding: 15px;
     font-size: 80%;
 }
 
