@@ -1,0 +1,161 @@
+@media (max-width: 1280px){
+    /*** bigger font on main-nav li items ***/
+
+
+}
+
+
+@media only screen and (max-width: 1251px) {
+    .first-h1,
+    .second-h1 {
+        font-size: 700%;
+      
+    }
+    
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1108px) {
+    .first-h1,
+    .second-h1{
+        font-size: 650%;
+      
+    }
+
+    #navbar a {
+        margin: auto 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1048px) {
+    .first-h1,
+    .second-h1 {
+        font-size: 600%;
+    }
+    #navbar a {
+        margin: auto 20px;
+    }
+}
+
+@media only screen and (max-width: 973px){
+    .first-h1,
+    .second-h1 {
+        font-size: 500%;
+    }
+
+    #navbar a {
+        font-size: 85%;
+        margin: auto 15px;
+    }
+    
+    h2 {
+        font-size: 130%;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 831px){
+    .first-h1,
+    .second-h1 {
+        font-size: 450%;
+    }
+
+}
+
+/* Small phones to small tablet: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    .first-h1,
+    .second-h1 {
+        font-size: 400%;
+    }
+
+    .intro-section {
+        margin: 265px 30px auto 110px;
+    }
+        
+}
+
+
+@media only screen and (max-width: 690px){
+    .first-h1,
+    .second-h1 {
+        font-size: 375%;
+    }
+}
+
+    .intro-section {
+    margin: 200px 30px auto 110px;
+}
+
+h2 {
+    font-size: 110%;
+}
+
+
+@media only screen and (max-width: 658px) {
+    .first-h1,
+    .second-h1 {
+        font-size: 350%;
+    }
+
+    #navbar a {
+        font-size: 75%;
+        margin: auto 10px;
+    }
+
+    .intro-subtext {
+        font-size: 80%;
+    }
+}
+    
+
+
+@media only screen and (max-width: 626px){
+    .first-h1,
+    .second-h1 {
+        font-size: 300%;
+    }
+
+    .intro-section {
+        margin: 250px 30px auto 80px;
+    }
+    .welcome-subtext {
+        margin: 10px 40px 30px 80px;
+    }
+} 
+    
+@media only screen and (max-width: 521px) {
+    .first-h1,
+    .second-h1 {
+        font-size: 270%;
+    }
+
+    .intro-section {
+        margin: 200px 30px 0 70px;
+    }
+
+    .welcome-subtext {
+        margin: 0 40px 30px 70px;
+    }
+    .intro-subtext {
+        font-size: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 475px) {
+    .intro-section {
+        margin: 175px 30px 0 70px;
+    }
+
+    .first-h1,
+    .second-h1 {
+        font-size: 230%;
+    }
+
+/* add collapseable navigation bar */
+
+}

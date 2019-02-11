@@ -2,12 +2,25 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/mediaquery.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,900" rel="stylesheet">
          <title>Di Anne Winn's Portfolio</title>
-    
+         <script src="https://code.jquery.com/jquery-3.3.1.js"
+                    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                    crossorigin="anonymous"></script>
+            <script type="text/javascript">
+                $(window).on('scroll', function(){
+                    if($(window).scrollTop()){
+                        $('nav').addClass('sticky');
+                    } else {
+                        $('nav').removeClass('sticky');
+                    }
+                });
+            
+            </script>
     </head>
         <body>
             <header id="welcome-section">
@@ -25,15 +38,15 @@
                 </div>
                 <div class="intro-section">    
                     <h1 class="first-h1">Hi, I'm</h1><br>
-                    <h1 class="second-h1">Diane Nguyen.</h1>
+                    <h1 class="second-h1 ">Diane Nguyen.</h1>
                 </div>
                 <div class="welcome-subtext">    
-                    <p class="intro-subtext">I'm so glad you're here!</p>
+                    <p class="intro-subtext">So glad you're here.</p>
                     <p class="intro-subtext">Welcome to <a id="front-link" href="#projects">my portfolio site.</a></p>   
                 </div>    
             </header>
 <!---Projects---->            
-            <section id="projects" class="js--section-project"> 
+            <section id="projects"> 
                 <div class="row">
                     <h2>projects</h2>
                     <ul class="grid-box">
@@ -82,40 +95,40 @@
                         </li>
                     </ul>    
                 </div>
+            <section id="github-link">
                 <p><a id="profile-link" href="https://github.com/d5nguyen" target="_blank">GitHub Page<ion-icon name="logo-github"></ion-icon></a></p>
+            </section>
             </section>    
 <!---Blog--->
-            <section id="blog" class="js-blog"> 
+            <section id="blog" class="background js-blog"> 
                 <div class="row">
                     <h2>blog</h2>
-                        <p> --- Coming Soon! --- </p>
+                        <p class="text"> --- Coming Soon! --- </p>
                 </div>
             </section>
                 
 <!---Resume--->
             <section id="resume" class="js-resume"> 
                 <div class="row">
-                    <h2>Resume</h2> 
-                        <p> --- Coming Soon! --- </p>
+                    <h2>resume</h2> 
+                    <p class="text"> --- Coming Soon! --- </p>
                 <p><a href="https://github.com/d5nguyen" target="_blank">GitHub Page<ion-icon name="logo-github"></ion-icon></a></p>
                 
                 </div>
             </section>
                 
 <!---About--->
-            <section id="about" class="js-about"> 
+            <section id="about" class="background js-about"> 
                 <div class="row">
                     <h2>about</h2> 
-                    <p> --- Coming Soon! --- </p>
+                    <p class="text"> --- Coming Soon! --- </p>
                 </div>
-            </section>
-                
-<!---Contact--->                
-            <section id="contact" class="js-contact"> 
-                <div class="row">
+<!---Contact--->                 
+                <div class="row js-contact" id="contact">
                     <h2>contact</h2>
                     <a href="mailto:d5nguyen@gmail.com" target="_blank">Contact Me</a>
                 </div>
+                
             </section>  
                 
             <footer>
