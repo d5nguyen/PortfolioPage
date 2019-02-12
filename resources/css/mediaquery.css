@@ -22,9 +22,34 @@
       
     }
 
+    #headshot img {
+        max-height: 250px;
+        width: auto;
+        right: -50px;
+        bottom: 50px;
+    }
+
+    .about-text {
+        max-height: 250px;
+        max-width: 250px;
+        
+    }
+
+    #contact{
+        
+    }
+
     #navbar a {
         margin: auto 30px;
     }
+
+    /* Need to move this element up still 
+    
+    
+    #contact{
+        
+    } */
+
 
 }
 
