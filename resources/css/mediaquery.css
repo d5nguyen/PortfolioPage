@@ -1,33 +1,94 @@
-@media (max-width: 1280px){
-    /*** bigger font on main-nav li items ***/
+@media only screen and (max-width: 1270px)  {
+    .project-pic {
+        height: 150px;
+    }    
 
+    .grid-photo {
+        margin: 15px auto;
+    }
 
 }
-
 
 @media only screen and (max-width: 1251px) {
-    .first-h1,
-    .second-h1 {
-        font-size: 700%;
-      
+    header .intro-section {
+        margin-top: 200px;
+    }
+         
+   
+    .project-pic {
+        height: 150px;
+        width: auto;
+    }
+
+    
+
+    
+} 
+
+@media only screen and (max-width: 1165px) {
+   header .intro-section {
+       margin-top: 200px;
+   }
+   
+   
+    .intro-section .first-h1,
+   .intro-section .second-h1 {
+        font-size: 600%;
+
     }
     
-}
-
-/* Small tablet to big tablet: from 768px to 1023px */
-@media only screen and (max-width: 1108px) {
-    .first-h1,
-    .second-h1{
-        font-size: 650%;
-      
+    
+    section #contact {
+        bottom: 140px;
     }
 
     #headshot img {
-        max-height: 250px;
-        width: auto;
-        right: -50px;
-        bottom: 50px;
+        bottom: 40px;
     }
+
+    .project-pic {
+        height: 125px;
+        width: auto;
+    }
+
+    .project-tile .grid-photo {
+        width: 80%;
+        margin: 20px auto;
+
+}
+
+    .entry p {
+        font-size: 90%;
+
+    }
+
+   section .row {
+        margin-left: 40px;
+    }
+
+    #headshot img {
+        right: -100px;
+    }
+
+    section #contact{
+        bottom: 120px;
+    }
+
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+ @media only screen and (max-width: 1108px) {
+    header .intro-section {
+        margin-top: 230px;
+    }
+    
+    .intro-section .first-h1,
+   .intro-section .second-h1 {
+        font-size: 550%;
+      
+    }
+
+
 
     .about-text {
         max-height: 250px;
@@ -35,28 +96,28 @@
         
     }
 
-    #contact{
-        
-    }
+    
 
     #navbar a {
         margin: auto 30px;
     }
 
-    /* Need to move this element up still 
-    
-    
-    #contact{
-        
-    } */
 
+
+   #blog p {
+    margin: 20px 40px;
+   }
+
+  section #contact {
+    bottom: 30px;
+}
 
 }
 
 @media only screen and (max-width: 1048px) {
-    .first-h1,
-    .second-h1 {
-        font-size: 600%;
+    .intro-section .first-h1,
+    .intro-section .second-h1 {
+        font-size: 500%;
     }
     #navbar a {
         margin: auto 20px;
@@ -64,8 +125,8 @@
 }
 
 @media only screen and (max-width: 973px){
-    .first-h1,
-    .second-h1 {
+    .intro-section .first-h1,
+    .intro-section .second-h1 {
         font-size: 500%;
     }
 
@@ -78,22 +139,25 @@
         font-size: 130%;
     }
     
-
+    
 
 }
 
 @media only screen and (max-width: 831px){
-    .first-h1,
-    .second-h1 {
+    .intro-section .first-h1,
+    .intro-section .second-h1 {
         font-size: 450%;
     }
 
+    #headshot img {
+        max-height: 200px;
+    }
 }
 
 /* Small phones to small tablet: from 481px to 767px */
-@media only screen and (max-width: 767px) {
-    .first-h1,
-    .second-h1 {
+ @media only screen and (max-width: 767px) {
+    .intro-section .first-h1,
+    .intro-section .second-h1 {
         font-size: 400%;
     }
 
@@ -105,8 +169,8 @@
 
 
 @media only screen and (max-width: 690px){
-    .first-h1,
-    .second-h1 {
+    .intro-section .first-h1,
+    .intro-section .second-h1 {
         font-size: 375%;
     }
 }
@@ -121,8 +185,8 @@ h2 {
 
 
 @media only screen and (max-width: 658px) {
-    .first-h1,
-    .second-h1 {
+    .intro-section .first-h1,
+    .intro-section .second-h1 {
         font-size: 350%;
     }
 
@@ -139,8 +203,8 @@ h2 {
 
 
 @media only screen and (max-width: 626px){
-    .first-h1,
-    .second-h1 {
+    .intro-section .first-h1,
+    .intro-section .second-h1 {
         font-size: 300%;
     }
 
@@ -153,8 +217,8 @@ h2 {
 } 
     
 @media only screen and (max-width: 521px) {
-    .first-h1,
-    .second-h1 {
+    .intro-section .first-h1,
+    .intro-section .second-h1 {
         font-size: 270%;
     }
 
@@ -172,15 +236,28 @@ h2 {
 }
 
 @media only screen and (max-width: 475px) {
+
+    /*thumbs up */
+    
+    #welcome-section .intro-section,
+    #welcome-section .welcome-subtext {
+        margin-left: 50px;
+    }           
+
+    .intro-section .first-h1,
+    .intro-section .second-h1 {
+        font-size: 400%;
+        
+    }
+    .welcome-subtext p{
+       font-size: 100%;
+    }
+}  
+
+
+/* @media only screen and (max-width: 320px) {
     .intro-section {
-        margin: 175px 30px 0 70px;
+        font-size: 1000%;
     }
-
-    .first-h1,
-    .second-h1 {
-        font-size: 230%;
-    }
-
-/* add collapseable navigation bar */
-
+} */
 }
