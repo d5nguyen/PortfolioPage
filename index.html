@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="resources/css/mediaquery.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
@@ -18,7 +19,7 @@
                     } else {
                         $('nav').removeClass('sticky');
                     }
-                });
+                }); 
             
             </script>
     </head>
@@ -27,22 +28,21 @@
                 <div class="row">
 
                 <nav id="navbar">
-                    <!-- <ul class="main-nav sticky"> -->
                         <a href="#projects">projects</a>
                         <a href="#blog">blog</a>
                         <a href="#about">about</a> 
                         <a href="#resume">resume</a>
                         <a href="#contact">contact</a> 
-                    <!-- </ul> -->
+                        <!-- <a class="mobile-nav-icon"><ion-icon name="menu"></ion-icon></a> -->
                 </nav>
                 </div>
                 <div class="intro-section">    
-                    <h1 class="first-h1"><span id="hi">Hi,</span> <span id="im">I'm</span></h1><br>
-                    <h1 class="second-h1 "><span id="diane">Diane</span> <span id="nguyen">Nguyen.</span></h1>
+                    <h1 class="first-h1"><span id="hi">Hi</span> <span id="im">I'm</span></h1><br>
+                    <h1 class="second-h1 "><span id="diane">Diane</span> <span id="nguyen">Nguyen</span></h1>
                 </div>
                 <div class="welcome-subtext">    
-                    <p class="intro-subtext">So glad you're here.</p>
-                    <p class="intro-subtext">Welcome to <a id="front-link" href="#projects">my portfolio site.</a></p>   
+                    <!-- <p class="intro-subtext">So glad you're here</p> -->
+                    <p class="intro-subtext">Welcome to <a id="front-link" href="#projects">my portfolio site</a></p>   
                 </div>    
             </header>
 <!---Projects---->            
@@ -52,7 +52,7 @@
                     <ul class="grid-box">
                          <!--Omnifood food delivery company -->
                          <li>
-                            <a class="project-tile" href="https://d5nguyen.github.io/Omnifood/" target="_blank">
+                            <a class="project-tile" href="https://d5nguyen.github.io/OmniFood/" target="_blank">
                                 <figure class="grid-photo"> 
                                     <img class="project-pic" src="resources/img/ProjectScreenShots/omnifoodScreenShot.png">
                                 </figure>
@@ -79,7 +79,7 @@
                     <ul class="grid-box clearfix">   
                          <!-- Submit form -->
                         <li>
-                         <a class="project-tile" href="#" target="_blank"> 
+                         <a class="project-tile" href="https://d5nguyen.github.io/Submit_form/" target="_blank"> 
                             <figure class="grid-photo">
                                 <img class="project-pic" src="resources/img/ProjectScreenShots/submitFormScreenShot.png">
                             </figure>
@@ -87,7 +87,7 @@
                         </li>
                         <!-- Prince Fan Page  -->
                         <li>
-                        <a class="project-tile" href="#" target="_blank">
+                        <a class="project-tile" href="https://d5nguyen.github.io/Prince_Fan_Page/" target="_blank">
                             <figure class="grid-photo">
                                 <img class="project-pic" src="resources/img/ProjectScreenShots/PrinceScreenShot.png">
                             </figure>
@@ -95,7 +95,7 @@
                         </li>
                     </ul>    
                 </div>
-            <section id="github-link">
+            <section class="github-prof">
                 <p><a id="profile-link" href="https://github.com/d5nguyen" target="_blank">GitHub Page<ion-icon name="logo-github"></ion-icon></a></p>
             </section>
             </section>    
@@ -123,9 +123,9 @@
             <section id="resume" class="js-resume"> 
                 <div class="row">
                     <h2>resume</h2> 
-                    <p class="resume-text"> --- Coming Soon! --- </p>
-                <p><a href="https://github.com/d5nguyen" target="_blank">GitHub Page<ion-icon name="logo-github"></ion-icon></a></p>
-                
+                        <div class="wrapper">
+                        <p class="resume-text"> --- Coming Soon! --- </p>
+                        </div>
                 </div>
             </section>
                 
@@ -133,7 +133,17 @@
             <section id="about" class="background"> 
                 <div class="row">
                     <h2>about</h2> 
-                    <p class="about-text"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+                    <p class="about-text"> "Lorem ipsum dolor sit amet, consectetur
+                         adipiscing elit, sed do eiusmod tempor incididunt
+                         ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                         ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                          in voluptate velit esse cillum dolore eu fugiat
+                          nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                          sunt in culpa qui officia deserunt mollit anim id est laborum. Duis
+                           aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                           non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" </p>
                         <figure id="headshot">
                             <img src="resources/img/headshot.jpg">
                         </figure>

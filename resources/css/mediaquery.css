@@ -164,7 +164,22 @@
     .intro-section {
         margin: 265px 30px auto 110px;
     }
-        
+    
+
+
+  /**************** new stuff   
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    #navbar {
+        float: left; 
+    }
+
+    #welcome-section #navbar {display: none;}
+  ****************************/  
+    
+    
 }
 
 
@@ -255,9 +270,99 @@ h2 {
 }  
 
 
-/* @media only screen and (max-width: 320px) {
-    .intro-section {
-        font-size: 1000%;
+@media only screen and (max-width: 320px) {
+    /*thumbs up */
+    
+    #welcome-section .intro-section {
+        margin-top: 170px;
+        
+    } 
+
+    .intro-section .first-h1 { 
+        font-size: 440%;
+        position: relative;
+        line-height: 0.6;
+        left: -14px;
+        /* top: -3px;  */
+        
+}
+    .second-h1 {
+        line-height: 0.7;
+        position: relative;
+        /* top: 10px; */   
     }
-} */
+
+
+    #diane{ 
+        font-size: 100%;
+    } 
+    #nguyen {
+        font-size:77%;
+    }
+    
+    .intro-subtext {
+        position: relative;
+        left: -7px;
+
+        
+    }
+    .intro-subtext:first-of-type {font-size: 128%;}
+    .intro-subtext:last-of-type {font-size: 84%;}
+
+    #projects {height: 950px;}
+    #blog {height: 900px;}
+    #resume {height: 700px;}
+    #about {height: 1100px;}
+
+    #projects .project-pic {
+        height: 110px;
+    }
+
+    #projects .grid-box li {
+        width: 90%;
+        position: relative;
+        left: -40px;
+    }
+
+    
+
+    .entry p {
+        font-size: 100%;
+    }
+
+    section .github-prof {
+ 
+        position: relative;
+        top: 30px;
+        left: 80px;
+    }
+
+    #resume .resume-text{left: -40px;}
+    
+    section .about-text {
+        margin-right: 35px;
+        /* bottom: -40px; */
+    }
+
+    footer .social-links li {
+        padding: 5px;
+        margin: 0 15px;}
+
+    #about h2 {margin-bottom: 0;}
+
+    #about #headshot {
+        height: 100px;
+        width: auto;
+        right: 140px;
+        bottom: -190px;
+        position: relative;
+    }
+
+    #about #contact {
+        bottom: -140px;
+    }
+
+
+}
+
 }
