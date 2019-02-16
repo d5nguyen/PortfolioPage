@@ -201,15 +201,9 @@ nav a:active {
     margin: 25px 0;
 }
 
-.project-pic {
-    height: 180px;
-    width: auto;
-}
-
 .grid-box {
-    /* height: 100%; */
+    width: 100%;
     list-style: none;
-    display: block;
 
 }
 
@@ -221,29 +215,36 @@ nav a:active {
    
 }
 
+.grid-photo {
+    transition: 1s;
+    border-radius: 5px;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: #000;
+}
+
+
 .grid-box img { 
     opacity: 1;   
     width: 100%;
-    transition: opacity 1s;
+    height: auto;
     vertical-align: bottom; /* to remove line on bottom of images */
-    
+    transition: transform 1s, opacity 1s;
    
 }
 
 .grid-box img:hover {
+    transform: scale(1.07);
     opacity: 0.3;
     
-    
+   
 }
 
-.grid-photo {
-    
-    margin: 20px auto;
-    overflow: hidden;
-    background-color: #000;
-    
-  
-}
+/* .project-pic {
+    height: 180px;
+    width: auto;
+} */
+
 
 .github-prof {
     display: block;
