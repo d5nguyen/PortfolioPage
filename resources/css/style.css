@@ -18,9 +18,10 @@ html {
 
 html, body {
     height: 100%;
-    overflow-x: hidden;
     text-rendering: optimizeLegibility;
 }
+
+body { overflow-x: hidden;}
 
 /*reusable components */
 section {
@@ -79,7 +80,7 @@ header {
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)), url(/resources/img/pinkPurpleMtns.jpg);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)), url(../../resources/img/pinkPurpleMtns.jpg);
 }
     
 
@@ -215,8 +216,8 @@ nav a:active {
 .grid-box li {
     display: block;
     float:left;
-    width: 27%;
-    margin-left: 30px;
+    width: 28%;
+    margin-left: 40px;
    
 }
 
@@ -224,6 +225,7 @@ nav a:active {
     opacity: 1;   
     width: 100%;
     transition: opacity 1s;
+    vertical-align: bottom; /* to remove line on bottom of images */
     
    
 }
@@ -240,6 +242,7 @@ nav a:active {
     overflow: hidden;
     background-color: #000;
     
+  
 }
 
 .github-prof {
