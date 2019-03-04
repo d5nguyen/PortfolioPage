@@ -9,30 +9,21 @@
         <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,900" rel="stylesheet">
          <title>Diane Nguyen's Portfolio</title>
-         <script src="https://code.jquery.com/jquery-3.3.1.js"
-                    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-                    crossorigin="anonymous"></script>
-            <script type="text/javascript">
-                $(window).on('scroll', function(){
-                    if($(window).scrollTop()){
-                        $('nav').addClass('sticky');
-                    } else {
-                        $('nav').removeClass('sticky');
-                    }
-                }); 
+            <!-- <script type="text/javascript">
+                
             
-            </script>
+            </script> -->
     </head>
         <body>
             <header id="welcome-section">
                 <div class="row">
 
                 <nav id="navbar">
-                        <a href="#projects">projects</a>
-                        <a href="#blog">blog</a>
-                        <a href="#about">about</a> 
-                        <a href="#resume">resume</a>
-                        <a href="#contact">contact</a> 
+                        <a class="js--scroll-projects" href="#projects">projects</a>
+                        <a class="js--scroll-blog" href="#blog">blog</a>
+                        <a class="js--scroll-about" href="#about">about</a> 
+                        <a class="js--scroll-resume" href="#resume">resume</a>
+                        <a class="js--scroll-contact" href="#contact">contact</a> 
                         <!-- <a class="mobile-nav-icon"><ion-icon name="menu"></ion-icon></a> -->
                 </nav>
                 </div>
@@ -46,7 +37,7 @@
                 </div>    
             </header>
 <!---Projects---->            
-            <section id="projects"> 
+            <section id="projects" class="js--projects"> 
                 <div class="row">
                     <h2>projects</h2>
                     <ul class="grid-box">
@@ -108,7 +99,7 @@
             </section>
             </section>    
 <!---Blog--->
-            <section id="blog" class="background js-blog"> 
+            <section id="blog" class="background js--blog"> 
                 <div class="row">
                     <h2>blog</h2>
                             <div class="entry">
@@ -128,7 +119,7 @@
             </section>
                 
 <!---Resume--->
-            <section id="resume" class="js-resume"> 
+            <section id="resume" class="js--resume"> 
                 <div class="row">
                     <h2>resume</h2> 
                         <div class="wrapper">
@@ -138,7 +129,7 @@
             </section>
                 
 <!---About--->
-            <section id="about" class="background"> 
+            <section id="about" class="background js--about"> 
                 <div class="row">
                     <h2>about</h2> 
                     <p class="about-text"> "Lorem ipsum dolor sit amet, consectetur
@@ -156,7 +147,7 @@
                             <img src="resources/img/headshot.jpg">
                         </figure>
 <!---Contact--->       
-                    <h2><a id="contact"href="mailto:d5nguyen@gmail.com" target="_blank">contact me</a></h2>
+                    <h2><a class="js--contact" id="contact"href="mailto:d5nguyen@gmail.com" target="_blank">contact me</a></h2>
                 </div>
                 
             </section>  
@@ -178,7 +169,6 @@
            
             <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
             <script src="resources/portfolio.js"></script>
-            <script src="vendors/jquery.waypoints.min copy.js"></script>
         
         </body>
 
