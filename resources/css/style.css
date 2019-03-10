@@ -27,8 +27,9 @@ body { overflow-x: hidden;}
 section {
     margin: 0 auto;
     display: block;
-    height: 90vh;
 }
+
+
 
 .row {
     max-width: 1140px;
@@ -211,7 +212,8 @@ nav a:active {
     display: block;
     float:left;
     width: 28%;
-    margin-left: 40px;
+    margin: 20px auto 10px 40px;
+
    
 }
 
@@ -252,12 +254,10 @@ nav a:active {
     left: 100px;
     top: 15px;
     font-size: 120%;
+    height: 10vh;
 }
 
-section #github-link {
-    height: 10vh;
-    margin: 10px auto 0 100px;
-}
+
 
 
 /*blog section */
@@ -279,9 +279,13 @@ h2 #resume {
 .resume-text {
     margin: 50px;
     display: inline-block;
-   
-    
 }
+
+.resume-download {
+    color: #6f0e7c;
+}
+
+
 #profile-link {
  margin: auto;   
 
@@ -289,14 +293,17 @@ h2 #resume {
 
 /* about section */
 
+
+
 .about-text {
     margin-left: 0px;
     float: left;
     max-height: 550px;
     max-width: 550px;
-    position: relative;
     bottom: -40px;
 }
+
+
 
 #headshot img {
     display: inline-block;
@@ -305,8 +312,10 @@ h2 #resume {
     width: auto;
     right: -120px;
     bottom: 20px;
-    position: relative; /*make this sticky upon scroll*/
+    position: relative;
 }
+
+
 
 #contact {
     position: relative;
